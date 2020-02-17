@@ -1,0 +1,80 @@
+.footer {
+  margin: 5rem 0 5rem 0;
+  padding: 0 3rem 0 3rem;
+  color: $color-white;
+
+  @media only screen and (max-width: $bp-mobile) {
+    text-align: center;
+  }
+
+  [class^="col-"] {
+    margin-bottom: 3rem;
+  }
+
+  &__disclaimer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 7rem;
+  }
+
+  &__logo {
+    width: auto;
+
+    @media only screen and (max-width: $bp-tab-por) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      width: auto;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__titles {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  &__menu {
+    list-style: none;
+  }
+
+  &__items {
+    margin-bottom: 0.5rem;
+  }
+
+  &__links:link,
+  &__links:visited {
+    color: $color-white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  &__copyright {
+    text-align: right;
+    display: block;
+    font-weight: 600;
+
+    @media only screen and (max-width: $bp-mobile) {
+      text-align: center;
+    }
+
+    img {
+      width: 20rem;
+      display: block;
+      margin-bottom: 2rem;
+      margin-left: auto;
+
+      @media only screen and (max-width: $bp-tab) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $bp-mobile) {
+        width: 40%;
+        margin: 0 auto 2rem auto;
+      }
+    }
+  }
+}

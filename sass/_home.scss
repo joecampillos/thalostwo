@@ -1,0 +1,224 @@
+.bodybg {
+  background: url("img/bodybg.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -6rem;
+  z-index: -1;
+}
+
+.advantages {
+  background: $color-grey-light;
+  padding: 10rem 13rem 1rem 13rem;
+  margin-bottom: 0 !important;
+
+  @media only screen and (max-width: $bp-tab-por) {
+    padding: 10rem 6rem 1rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 5rem 3rem 1rem 3rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: block;
+    }
+  }
+
+  &__image {
+    text-align: center;
+
+    img {
+      width: auto;
+
+      @media only screen and (max-width: $bp-desktop-lg) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $bp-mobile) {
+        min-width: auto;
+        margin: 3rem 0;
+      }
+
+      @media only screen and (max-width: $bp-mobile-small) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+
+.comparison {
+  background: $color-grey-light;
+  padding: 5rem 13rem 10rem 13rem;
+  margin-bottom: 0 !important;
+
+  @media only screen and (max-width: $bp-tab-por) {
+    padding: 5rem 6rem 10rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 5rem 3rem 10rem 3rem;
+  }
+
+  .row {
+    margin-bottom: 0 !important;
+  }
+
+  &__list {
+    background: $color-white;
+    padding: 4rem 5rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+
+    @media only screen and (max-width: $bp-tab-por) {
+      min-height: 38rem;
+    }
+  }
+
+  &__image {
+    text-align: center;
+
+    img {
+      width: auto;
+    }
+  }
+
+  &__desc {
+    font-size: $default-font-size;
+    font-weight: 600;
+    margin-top: 2.5rem;
+  }
+}
+
+.purchase {
+  background: $color-white;
+  padding: 10rem 13rem 10rem 7rem;
+  border-radius: 0 0 2rem 2rem;
+  position: relative;
+
+  [class^="col-"] {
+    @media only screen and (max-width: $bp-tab-por) {
+      width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: $bp-tab-por) {
+    padding: 10rem 8rem 10rem 2rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 10rem 6rem 10rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 10rem 3rem 10rem 3rem;
+  }
+
+  &::after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 30px;
+    margin-left: -30px;
+  }
+
+  &__image-box {
+    @media only screen and (max-width: $bp-tab-por) {
+      text-align: center;
+    }
+  }
+
+  .purchase__image {
+    width: 100%;
+
+    @media only screen and (max-width: $bp-tab-por) {
+      min-width: auto;
+    }
+  }
+
+  &__box {
+    border: 1px solid #dedede;
+    padding: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__rating {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.item-options {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__list {
+    border: 1px solid $color-grey-light2;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1.4rem 2rem;
+    flex: 1 1 40%;
+    margin: 0.8rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $color-primary;
+    }
+
+    &:hover a {
+      color: $color-primary;
+    }
+
+    &:focus,
+    &:active {
+      background: $color-primary;
+
+      a {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-black;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__desc {
+    font-size: $default-font-size;
+    font-weight: 400;
+    display: block;
+  }
+}
+
+.purchase__rating {
+  justify-content: center;
+  margin-top: 2rem;
+}

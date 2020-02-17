@@ -1,0 +1,34 @@
+// COLORS
+$color-primary: #0099d3;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #006d96;
+
+$color-secondary: #bacf31;
+$color-secondary-dark: #839606;
+
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #333333;
+$color-grey-light: #e9e9e9;
+$color-grey-light2: #adadad;
+
+// FONT
+$default-font: "Rajdhani", "Helvetica", sans-serif;
+$default-font-size: 1.6rem;
+
+//GRID
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 3rem;
+
+// RESPONSIVE BREAKPOINTS
+
+$bp-desktop-lg: 71.25em; //1140px
+$bp-1260: 78.75em; //1260px
+$bp-desktop-sm: 78.75em; //1160px
+$bp-tab: 60em; //900px
+$bp-tab-por: 48em; //768px
+$bp-mobile: 35.5em; //569px
+$bp-mobile-small: 25.8em; //414px
