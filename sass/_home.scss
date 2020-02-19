@@ -222,3 +222,23 @@
   justify-content: center;
   margin-top: 2rem;
 }
+
+.moneyback {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-top: 5rem;
+
+  @media only screen and (max-width: $bp-tab-por) {
+    margin: 5rem auto 0;
+  }
+
+  img {
+    margin-right: 2rem;
+    width: 10rem;
+
+    @media only screen and (max-width: $bp-tab-por) {
+      width: 30%;
+    }
+  }
+}
