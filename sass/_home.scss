@@ -205,7 +205,7 @@
   &__link:link,
   &__link:visited {
     color: $color-black;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
@@ -215,6 +215,7 @@
     font-size: $default-font-size;
     font-weight: 400;
     display: block;
+    margin-top: 0.8rem;
   }
 }
 

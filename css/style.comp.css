@@ -492,14 +492,15 @@ button {
         color: #fff; }
   .item-options__link:link, .item-options__link:visited {
     color: #000;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease-in-out; }
   .item-options__desc {
     font-size: 1.6rem;
     font-weight: 400;
-    display: block; }
+    display: block;
+    margin-top: 0.8rem; }
 
 .purchase__rating {
   justify-content: center;
